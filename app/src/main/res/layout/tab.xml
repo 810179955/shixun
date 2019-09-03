@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal">
+
+    <!-- ImageButton没加android:clickable="false"时，
+    点击下方的ImageBuutton不会改变页面，点击TextView才会改变页面，
+    这是因为每个tab是一个LinearLayout，
+    每个LinearLayout都有一个ImageButton，
+    当点击ImageButton位置时，
+    点击事件首先会到LinearLayout上，
+    LinearLayout会去判断，
+    发现内部有一个ImageButton可以解决点击事件，
+    所以就把点击事件交给ImageButton，
+    而ImageButton又没有写点击事件，
+    所以点击事件就失效了。-->
+
+    <LinearLayout
+        android:id="@+id/tab_light"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#4Dffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sthupo"
+            android:text="灯光控制"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_syn"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sthupo"
+            android:text="综合控制"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_Profiles"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sthupo"
+            android:text="情景模式"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

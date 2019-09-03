@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/air_close"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/air_close" />
+
+        <Button
+            android:id="@+id/air_cool"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/air_cool" />
+
+        <Button
+            android:id="@+id/air_up"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/air_up" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/air_wind"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/air_wind" />
+
+        <Button
+            android:id="@+id/air_hot"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/air_hot" />
+
+        <Button
+            android:id="@+id/air_down"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/air_down" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bt_stop" android:state_pressed="false"/><!--没点击按钮的时候-->
+    <!--当点击按钮的时候-->
+    <item android:drawable="@drawable/bt_stop_2" android:state_pressed="true" />
+</selector>

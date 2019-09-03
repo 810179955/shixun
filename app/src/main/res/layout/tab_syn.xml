@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab_syn"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="液晶电视"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="开门"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="空调"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="白板"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:orientation="horizontal">
+
+            //9
+
+            <Button
+                android:id="@+id/bt_tv_1"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_tv_on"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/bt_win_on"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_tv_off"
+                android:onClick="onClick" />
+
+            //10
+
+            <Button
+                android:id="@+id/bt_door"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/bt_door"
+                android:onClick="onClick" />
+
+            //11
+
+            <Button
+                android:id="@+id/bt_air"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_tem"
+                android:onClick="ponClick" />
+
+            //12
+
+            <Button
+                android:id="@+id/bt_board_1"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_board_on"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/bt_board_0"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_board_off"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ALL"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ALL"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal">
+
+                //9
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="90dp"
+                    android:layout_height="210dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/window" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp">
+
+                        <Button
+                            android:id="@+id/bt_win10_on"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_on"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win11_on"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_on"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win12_on"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_on"
+                            android:onClick="window" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bt_win10_off"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_off"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win11_off"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_off"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win12_off"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_off"
+                            android:onClick="window" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                //9
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="90dp"
+                    android:layout_height="210dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blind" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp">
+
+                        <Button
+                            android:id="@+id/bt_win0_on"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_on"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win1_on"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_on"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win2_on"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_on"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win3_on"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_on"
+                            android:onClick="window" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bt_win0_off"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_off"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win1_off"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_off"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win2_off"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_off"
+                            android:onClick="window" />
+
+                        <Button
+                            android:id="@+id/bt_win3_off"
+                            android:layout_width="90dp"
+                            android:layout_height="105dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_window_off"
+                            android:onClick="window" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

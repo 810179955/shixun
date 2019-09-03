@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            //1
+
+            <Button
+                android:id="@+id/bt_light_1_on"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/pro_sk"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/bt_light_1_off"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:background="@drawable/pro_xk"
+                android:onClick="onClick" />
+
+            //2
+
+            <Button
+                android:id="@+id/bt_light_2_on"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/pro_sj"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/bt_light_2_off"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:background="@drawable/pro_out"
+                android:onClick="onClick" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
